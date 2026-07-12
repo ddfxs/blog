@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章标题 - 我的硬核博客</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 1. 动态页头：由 JS 自动注入，改一处即可同步所有文章的导航 -->
+    <header id="global-header"></header>
+
+    <!-- 2. 文章主体：极致精简的语义化排版 -->
+    <main class="post-container">
+        <article>
+            <h1 class="post-title">这里写文章的大标题</h1>
+            <div class="post-meta">发布于: 2026-07-12 | 标签: Web, 原生</div>
+            
+            <hr>
+            
+            <section class="post-content">
+                <p>这里直接写正文。手写流的好处是你可以完全掌控每一个 <code>p</code> 标签和图片的排版。</p>
+                <h2>一、这是一级小标题</h2>
+                <p>原生代码不需要经过任何编译，直接上传即可在 Cloudflare Pages 极其顺畅地秒开。</p>
+            </section>
+        </article>
+    </main>
+
+    <!-- 3. 动态页脚 -->
+    <footer id="global-footer"></footer>
+
+    <!-- 引入核心 JS，实现公用组件注入 -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
