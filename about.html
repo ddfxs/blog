@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 我的硬核博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-list { margin: 20px 0; padding-left: 20px; }
+        .contact-list li { margin-bottom: 8px; }
+        /* 简易原生留言板样式 */
+        .comment-system {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px dashed rgba(128, 128, 128, 0.3);
+        }
+        .comment-input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(128, 128, 128, 0.05);
+            border: 1px solid rgba(128, 128, 128, 0.2);
+            color: var(--text-color);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-family: inherit;
+            resize: vertical;
+        }
+        .comment-btn {
+            background: var(--link-color);
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .comment-btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <header id="global-header"></header>
+
+    <main class="container">
+        <h1>ℹ️ 关于我</h1>
+        <p style="margin-top: 15px;">
+            这里可以填写你个人的详细介绍、技术栈、兴趣爱好等等。既然是纯手写流，你可以任意放置任何你喜欢的 HTML 元素。
+        </p>
+
+        <h2>📫 找到我</h2>
+        <ul class="contact-list">
+            <li><strong>Github:</strong> <a href="https://github.com/ddfxs" target="_blank">@ddfxs</a></li>
+            <li><strong>Email:</strong> admin@yourdomain.com</li>
+            <li><strong>X (Twitter):</strong> <a href="#" target="_blank">@YourHandle</a></li>
+        </ul>
+
+        <!-- 纯前端留言板占位（可后期接入第三方如 Giscus, Valine 或 Disqus） -->
+        <section class="comment-system">
+            <h3>💬 给我留言</h3>
+            <p style="font-size: 13px; color: #888; margin-bottom: 15px;">欢迎在这里留下你的足迹或建议：</p>
+            <form onsubmit="alert('提示：这是一个硬核演示，点击确定。若要真正启用留言，可集成 Giscus 或 Valine 开源评论系统！'); return false;">
+                <textarea class="comment-input" rows="4" placeholder="说点什么吧..." required></textarea>
+                <button type="submit" class="comment-btn">提交留言</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="global-footer"></footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
