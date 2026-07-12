@@ -32,3 +32,11 @@ body {
 h1, h2, h3 { color: var(--text-color); margin-top: 1.5em; }
 a { color: var(--link-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* 让所有媒体文件自适应屏幕宽度 */
+img, video, audio {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* 圆角看起来更现代 */
+    margin: 20px 0;
+}
