@@ -1,0 +1,16 @@
+{
+  "articles": [
+    {
+      "title": "如何用 Cloudflare Pages 搭建超轻量个人网站",
+      "date": "2026-07-12",
+      "path": "posts/2026-07-12-hello-world.html",
+      "tags": ["技术", "前端"]
+    },
+    {
+      "title": "告别繁琐框架，回归老派网页开发的快乐",
+      "date": "2026-07-01",
+      "path": "posts/2026-07-01-pure-web.html",
+      "tags": ["随笔", "硬核流"]
+    }
+  ]
+}
